@@ -17,12 +17,14 @@ let fizzbuzz = function(arr){
 	for (let i = 1; i <=100; i++){
 		counter = i;
 		var value = false;
+		let returnValue = [];
 		for(let j = 0; j <= arr.length ; j++){
 			if(i % denomArray[j] == 0){
-				console.log(messageArray[j]);
+				returnValue.push(messageArray[j]);
 				value = true;
 			} 
 		}
+		console.log(returnValue.toString())
 		if(value == false){
 			console.log(counter);
 		};
