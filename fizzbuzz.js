@@ -12,10 +12,8 @@ let fizzbuzz = function(arr){
 	var returnValue= [];
 	let denomArray = arr.map(x => x.denom);
 	let messageArray = arr.map(x => x.message);
-	let counter;
 
 	for (let i = 1; i <=100; i++){
-		counter = i;
 		var value = false;
 		let returnValue = [];
 		for(let j = 0; j <= arr.length ; j++){
@@ -24,9 +22,10 @@ let fizzbuzz = function(arr){
 				value = true;
 			} 
 		}
-		console.log(returnValue.toString())
 		if(value == false){
-			console.log(counter);
+			console.log(i);
+		} else {
+			console.log(returnValue.toString());
 		};
 	}
 }
