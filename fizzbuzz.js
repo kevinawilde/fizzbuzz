@@ -7,7 +7,6 @@ let fbObArr = [{
 }];
 
 
-
 let fizzbuzz = function(arr){
 	var returnValue= [];
 	let denomArray = arr.map(x => x.denom);
@@ -25,7 +24,7 @@ let fizzbuzz = function(arr){
 		if(value == false){
 			console.log(i);
 		} else {
-			console.log(returnValue.toString());
+			console.log(returnValue.join(''));
 		};
 	}
 }
